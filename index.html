@@ -16,10 +16,18 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Insira seus dados para acessar sua conta</p>
-
+                <br>
                 <form action="login.php" method="post">
+                    <label for="iuser"><strong>Usuário </strong></label>
+                    <input type="text" name="user" id="iuser" required placeholder="nome de usuário">   
 
+                    <label for="ipass"><strong>Senha </strong></label>             
+                    <input type="password" name="pass" id="ipass" minlength="8" required placeholder="sua senha">
+
+                    <input type="submit" value="Entrar">
+                    <a href="#" id="esqueci">Esqueci a senha</a>
                 </form>
+
             </div>
         </section>
     </main>
